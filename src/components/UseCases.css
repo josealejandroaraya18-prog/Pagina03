@@ -1,0 +1,88 @@
+.use-cases {
+  padding: var(--section-padding);
+}
+
+.cases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-card {
+  padding: 2.5rem;
+  position: relative;
+}
+
+.case-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.case-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.case-col {
+  flex: 1;
+}
+
+.case-col h5 {
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.case-col p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.case-col.p-sol h5 {
+  color: var(--accent-cyan);
+  opacity: 1;
+}
+
+.case-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.divider-icon {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .case-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .case-divider {
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+}
